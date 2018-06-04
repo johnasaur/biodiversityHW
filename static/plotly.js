@@ -1,5 +1,5 @@
 // references
-var $Metadata = document.getElementById("sampleMetadata");
+var $sampleMetadata = document.getElementById("sampleMetadata");
 var $bubble = document.getElementById("bubble");
 var $selDataset = document.getElementById("selDataset");
 var $pie = document.getElementById("pie");
@@ -162,7 +162,7 @@ d3.json(plotURL, function(error, response) {
     for (var i = 0; i < valueSlice.length; i++) {
         if (valueSlice[i] != 0) {
             pieIds.push(idSlice[i]);
-            pieValues.push(valuesSlice[i]);
+            pieValues.push(valueSlice[i]);
         };
     };
 
