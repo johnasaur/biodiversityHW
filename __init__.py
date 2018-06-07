@@ -1,5 +1,5 @@
-from biodiversityHW import db
+from biodiversityHW.app import engine
 import os
 
 # db.drop_all()
-db.create_all()
+engine.create_all()
