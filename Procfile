@@ -1,1 +1,1 @@
- web: gunicorn biodiversityHW.app:app
+ web: gunicorn biodiversityHW:app
