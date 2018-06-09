@@ -10,7 +10,7 @@ import csv
 app = Flask(__name__)
 
 # create sqlite db
-engine = create_engine("sqlite:///datasets/belly_button_biodiversity.sqlite")
+engine = create_engine("sqlite:///DataSets/belly_button_biodiversity.sqlite")
 print(engine)
 Base = automap_base()
 Base.prepare(engine, reflect=True)
