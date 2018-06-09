@@ -10,15 +10,17 @@ import csv
 app = Flask(__name__)
 
 # create sqlite db
-engine = create_engine("sqlite:///DataSets/belly_button_biodiversity1.sqlite")
+engine = create_engine("sqlite:///datasets/belly_button_biodiversity.sqlite")
+print(engine)
 Base = automap_base()
 Base.prepare(engine, reflect=True)
-session = Session(engine)
 
 # tables
 otu = Base.classes.otu
 samples = Base.classes.samples
 samples_metadata = Base.classes.samples_metadata
+
+session = Session(engine)
 
 # dashboard homepage
 @app.route("/")
