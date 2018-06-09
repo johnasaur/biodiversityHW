@@ -1,5 +1,5 @@
-from week15hw.app import engine
+from week15hw.app import otu
 import os
 
 # db.drop_all()
-engine.create_all()
+otu.create_all()
