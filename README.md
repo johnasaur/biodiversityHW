@@ -1,5 +1,3 @@
-#### Link to deployed Heroku app: 
-
 ### Step 1 - Flask API
 
 * Use Flask to design an API for your dataset and to serve the HTML and JavaScript required for your dashboard page. 
